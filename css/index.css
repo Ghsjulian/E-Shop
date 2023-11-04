@@ -1,0 +1,70 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgba(0,66,68,0.17);
+}
+header,.header {
+  display :flex;
+  position: fixed;
+  top :0;
+  left :0;
+  width: 100%;
+  padding: .5rem 1rem;
+  justify-content: space-between;
+  background: #fff;
+  z-index: 9999;
+  align-items: center;
+}
+.header .logo {
+  display: flex;
+}
+.logo h3{
+  color: #00b3bf;
+ font-size: 25px;
+ font-weight: 700;
+}
+.header .links a {
+  display : inline-block;
+  text-decoration: none;
+  margin: 0 1.5rem;
+  color: #262626;
+  font-weight: 800;
+  font-size: 18px;
+transition: .3s ease-in;
+}
+.links a:hover {
+  color: #14f3ff;
+  border-bottom: 1px solid #9b2e00;
+  transition: .3s ease-in;
+}
+
+.container {
+  position: relative;
+  margin-top: 5%;
+}
+.hero {
+  background-image: url('../images/hero1.jpg');
+  width: 100vw;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (max-width: 450px) {
+  .links,
+  .links a {
+    display: none;
+  }
+  .header .mobile-nav {
+    display: block;
+  }
+  .container {
+  position: relative;
+  margin-top: 5%;
+}
+.hero {
+  height: 50vh;
+}
+}
